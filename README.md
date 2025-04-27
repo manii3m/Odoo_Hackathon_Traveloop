@@ -70,6 +70,26 @@ src/
 └── index.css       # Global styles and Tailwind configuration
 ```
 
+## 🌍 Deployment
+
+Since this is a Vite-powered React single-page application (SPA), it can be easily deployed to static hosting providers like Vercel or Netlify.
+
+### Option 1: Vercel (Recommended)
+1. Push your code to a GitHub repository.
+2. Log in to [Vercel](https://vercel.com/) and click **Add New Project**.
+3. Import your GitHub repository.
+4. Open the **Environment Variables** section and add:
+   - `VITE_GEMINI_API_KEY` = (Your Gemini API Key)
+5. Click **Deploy**. Vercel will automatically detect Vite and run `npm run build`.
+
+### Option 2: Netlify
+1. Push your code to a GitHub repository.
+2. Log in to [Netlify](https://www.netlify.com/) and click **Add new site** > **Import an existing project**.
+3. Connect your GitHub account and select your repository.
+4. Under **Advanced build settings**, add your New Environment Variable:
+   - Key: `VITE_GEMINI_API_KEY`, Value: (Your Gemini API Key)
+5. Click **Deploy site**.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -80,3 +100,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 *Built with ❤️ for the Hackathon.*
+
+commit 2025-04-27 10:00:00
