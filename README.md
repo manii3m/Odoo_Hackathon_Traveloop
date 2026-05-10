@@ -1,16 +1,82 @@
-# React + Vite
+# Yatra 2.0 (Traveloop) ✈️🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Yatra 2.0 Banner](https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1200&auto=format&fit=crop)
 
-Currently, two official plugins are available:
+**Yatra 2.0 (Traveloop)** is a modern, AI-powered travel planning application designed to make multi-city trip coordination effortless. Built with a premium UI and packed with features like AI trip generation, budget tracking, and an interactive itinerary builder, it is your ultimate companion for exploring the world.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- 🤖 **AI Trip Planner**: Let Google Gemini (1.5 Flash) generate personalized, budget-conscious, and vibe-matching itineraries instantly based on your preferences.
+- 🗺️ **Multi-City Itineraries**: Build complex, multi-stop trips manually or let AI do the heavy lifting for you.
+- 📍 **Smart Autocomplete**: Powered by OpenStreetMap for fast and accurate destination and location searches.
+- 💰 **Budget Management**: Track your travel expenses, visualize costs with beautiful charts (Recharts), and stay within your financial goals.
+- 🎒 **Packing Checklist**: Never forget an essential item with built-in packing lists.
+- 🌐 **Community Hub & Reviews**: Share your journeys, read reviews, and get inspired by other travelers.
+- 📝 **Trip Notes**: Jot down quick thoughts, reservation numbers, and memories.
+- 🔐 **User & Admin Dashboards**: Complete profile management, settings, and an admin view for platform moderation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 19, Vite
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React
+- **Data Visualization**: Recharts
+- **AI Integration**: `@google/generative-ai` (Gemini 1.5 Flash API)
+- **Location API**: OpenStreetMap (Nominatim)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository** (if applicable) or navigate to the project directory:
+   ```bash
+   cd Odoo_Hackathon_Traveloop
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables**:
+   Create a `.env` file in the root of the project and add your Google Gemini API key:
+   ```env
+   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**:
+   Navigate to `http://localhost:5173` to see the application in action.
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/         # Static assets like images and fonts
+├── components/     # Reusable UI components (Sidebar, Toast, Modals)
+├── context/        # React Context API for global state management (AppContext)
+├── data/           # Seed data for initial state
+├── screens/        # Main application views/pages (Dashboard, AITripGenerator, etc.)
+├── App.jsx         # Main application shell and routing logic
+├── main.jsx        # React entry point
+└── index.css       # Global styles and Tailwind configuration
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+*Built with ❤️ for the Hackathon.*
